@@ -22,7 +22,7 @@ private:
 	Time m_PlayerLastHit;
 
 	// Where is the player
-	Vector2f m_Position;
+	Vector2f m_PlayerPosition;
 
 	// Screen Resolution
 	Vector2f m_Resolution;
@@ -58,7 +58,7 @@ public:
 	Time getLastPlayerHitTime();
 	FloatRect getPlayerPosition();
 	Vector2f getPlayerCenter(); // Gets center of player sprite
-	float getPlayerRotation(); // Gets what direction player is facing
+	Angle getPlayerRotation(); // Gets what direction player is facing
 	Sprite getPlayerSprite();
 	int getPlayerHealth();
 
