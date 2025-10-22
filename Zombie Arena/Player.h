@@ -55,12 +55,12 @@ public:
 	bool playerHit(const Time&);
 
 	// Getters
-	Time getLastPlayerHitTime();
+	Time	  getLastPlayerHitTime() const;
 	FloatRect getPlayerPosition();
-	Vector2f getPlayerCenter(); // Gets center of player sprite
-	Angle getPlayerRotation(); // Gets what direction player is facing
-	Sprite getPlayerSprite();
-	int getPlayerHealth();
+	Vector2f  getPlayerCenter() const;	  // Gets center of player sprite
+	Angle	  getPlayerRotation();		  // Gets what direction player is facing
+	Sprite	  getPlayerSprite();
+	int		  getPlayerHealth() const;
 
 	// Player Movement Functions
 	void playerMoveUp();
@@ -81,9 +81,9 @@ public:
 	void update(const float&, Vector2i&);
 
 	// Give player speed and health
-	void givePlayerSpeed();
-	void givePlayerHealth();
+	void upgradePlayerSpeed();
+	void upgradePlayerHealth();
 
 	// Player Health Upgrade
-	void upgradePlayerMaxHealth(int&);
+	void givePlayerHealth(int);
 };
