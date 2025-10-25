@@ -13,7 +13,7 @@ m_RightPressed(false), m_TileSize(0)
 	m_PlayerSprite.setOrigin(Vector2f(25.0f, 25.0f));
 }
 
-void Player::spawn(IntRect& arena, Vector2f& screenResolution, int& tileSize)
+void Player::spawn(IntRect& arena, Vector2u& screenResolution, int& tileSize)
 {
 	int arenaWidth  = arena.size.x;
 	int arenaHeight = arena.size.y;
@@ -117,7 +117,7 @@ void Player::playerStopRight()
 	m_RightPressed = false;
 }
 // position (+ or -) speed * elapsed time.
-void Player::update(const float& elapsedTime, Vector2i& mousePosition)
+void Player::update(const float& elapsedTime, Vector2i mousePosition)
 {
 	// Uses the keys pressed determined with the bool values,
 	// determines the player direction using speed and time so we can 

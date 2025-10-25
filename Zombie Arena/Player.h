@@ -46,7 +46,7 @@ public:
 	// IntRect& arena - Size and location of current level
 	// Vector2f screenResolution - Contains screen resolution
 	// int& - Contains size of background tile
-	void spawn(IntRect&, Vector2f&, int&);
+	void spawn(IntRect&, Vector2u&, int&);
 
 	// Resets players stats when new game is started
 	void resetPlayerStats();
@@ -78,7 +78,7 @@ public:
 	// 
 	// const float& elapsedTime - Elapsed time since last frame was drawn
 	// Vector2i& mousePositon - Contains what direction is the mouse facing
-	void update(const float&, Vector2i&);
+	void update(const float&, Vector2i);
 
 	// Give player speed and health
 	void upgradePlayerSpeed();
